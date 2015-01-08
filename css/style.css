@@ -1,0 +1,254 @@
+body
+{
+    background: none repeat scroll 0 0 #FFFFFF;
+    margin: 0;
+    min-height: 670px;
+    min-width: 960px;
+    color: #666666;
+    font-family: "Open Sans",Arial,sans-serif;
+    font-size: 14px;
+}
+
+h1, h2, h3, h4, h5, h6, p, a {
+	color: #666;
+    margin: 0;
+    padding: 0;
+}
+
+#header {
+    height: 160px;
+    background: none repeat scroll 0 0 whitesmoke;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    border-bottom: 1px dashed #ccc;
+    color: #91959C;
+    left: 0;
+    position: fixed;
+    right: 0;
+    z-index: 1000;
+}
+#logo {
+	width: 350px;
+	margin: 10px auto;
+}
+
+#sections {
+    padding-top: 160px;
+    background-image: url("body-bg.jpg");
+    
+}
+.section {
+    background-position: center bottom;
+    border-bottom: 1px dashed #eba1a3;
+    padding-bottom: 0;
+    position: relative;
+    z-index: 1;
+}
+
+.center {
+    margin: 0 auto;
+    max-width: 960px;
+    padding: 0 10px;
+}
+
+.white-boxy
+{
+    background-color: transparent;
+    padding: 30px;
+    width: 400px;
+}
+
+.white-boxy a, .white-boxy a:visited
+{
+	text-decoration:none;
+}
+
+.white-boxy a:hover
+{
+	text-decoration:underline;
+}
+
+.align-left
+{
+    float: left;
+}
+
+.align-right
+{
+    float: right;
+}
+
+.content-text
+{
+    text-align: left;
+}
+
+.white-boxy h2 {
+	font-family: 'Lobster', cursive;
+    font-size: 28px;
+    font-weight: normal;
+    padding-bottom: 10px;
+}
+
+.clear-both
+{
+    clear: both;
+}
+
+
+nav
+{
+	width: 600px;
+	margin: 0 auto;
+}
+
+nav ul
+{
+	padding: 0;
+	margin: 15px 0 0 0;
+	list-style: none;  	
+}
+
+nav li
+{
+	float: left;
+}
+
+nav #active
+{
+	-moz-box-shadow:    0px 4px 2px -2px yellow;
+  	-webkit-box-shadow: 0px 4px 2px -2px yellow;
+  	box-shadow:         0px 4px 2px -2px yellow;
+}
+
+nav a
+{
+	float: left;
+    color: #eee;
+    margin: 0 5px;
+    padding: 2px;
+    text-decoration: none;
+	border: 1px solid #831608;
+	font: bold 11px Arial, Helvetica; 	
+    background-color: #831608;
+    background-image: -moz-linear-gradient(#bb413b, #831608);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#bb413b), to(#831608));    
+    background-image: -webkit-linear-gradient(#bb413b, #831608);
+    background-image: -o-linear-gradient(#bb413b, #831608);
+    background-image: -ms-linear-gradient(#bb413b, #831608);
+    background-image: linear-gradient(#bb413b, #831608);
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    text-shadow: 0 -1px 0 rgba(0,0,0,.8);    
+}
+
+nav a:hover
+{
+    background-color: #bb413b;
+    background-image: -moz-linear-gradient(#831608, #bb413b);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#831608), to(#bb413b));      
+    background-image: -webkit-linear-gradient(#831608, #bb413b);
+    background-image: -o-linear-gradient(#831608, #bb413b);
+    background-image: -ms-linear-gradient(#831608, #bb413b);
+    background-image: linear-gradient(#831608, #bb413b);
+}
+
+nav a:active
+{
+    background: #bb413b;
+    position: relative;
+    top: 2px;    
+    -moz-box-shadow: 0 0 3px rgba(0, 0, 0, 0.7) inset;
+    -webkit-box-shadow: 0 0 3px rgba(0, 0, 0, 0.7) inset;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.7) inset; 
+}
+
+nav span
+{
+	border: 1px dashed #eba1a3;
+    display: inline-block;
+    padding: 3px 15px;
+	cursor: pointer;	
+    background-color: #bb413b;
+    background-image: -moz-linear-gradient(#d4463c, #aa2618);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#d4463c), to(#aa2618));      
+    background-image: -webkit-linear-gradient(#d4463c, #aa2618);
+    background-image: -o-linear-gradient(#d4463c, #aa2618);
+    background-image: -ms-linear-gradient(#d4463c, #aa2618);
+    background-image: linear-gradient(#d4463c, #aa2618);
+}
+
+nav a:hover span
+{	
+    background-color: #bb413b;
+    background-image: -moz-linear-gradient(#aa2618, #d4463c);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#aa2618), to(#d4463c));      
+    background-image: -webkit-linear-gradient(#aa2618, #d4463c);
+    background-image: -o-linear-gradient(#aa2618, #d4463c);
+    background-image: -ms-linear-gradient(#aa2618, #d4463c);
+    background-image: linear-gradient(#aa2618, #d4463c);
+}
+
+/************************************************************************* gallery */
+
+.gallery 
+{
+	width: 420px;
+	background: url('img/gallery-bg.png') repeat;
+	margin-top: 40px;
+	margin-bottom: 40px;
+	padding-bottom: 20px;
+	
+	-moz-border-radius: 7px;
+    -webkit-border-radius: 7px;
+    border-radius: 7px;
+}
+
+.gallery .main-img-container 
+{
+	width: 340px;
+	height: 200px;
+	margin: 0 auto;
+	padding: 10px;
+}
+
+.gallery .main-img 
+{
+	height: 190px;
+	margin: 0 auto;
+}
+
+.gallery .thumbstrip 
+{
+	width: 340px;
+	height: 90px;
+	margin: 0 auto;
+	overflow: auto;
+	overflow-y: hidden;
+}
+
+.gallery .thumbstrip .inner 
+{
+	width: 2000px	
+}
+
+.gallery .thumbstrip .thumb 
+{
+	height: 80px;
+	float: left;
+	margin-right: 5px;
+}
+
+/************************************************************************* single images */
+
+
+h2.impressum-headline {
+	font-family: 'Lobster', cursive;
+    font-size: 28px;
+    font-weight: normal;
+    padding-bottom: 10px;
+}
+
+.more {
+    color: #bb413b;
+}

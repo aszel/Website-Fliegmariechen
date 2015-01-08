@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link type="text/css" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700">
+	<link href='http://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+	<!--<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>-->
+	
+	<script src="js/jquery-1.4.2.min.js"></script>
+	<script src="js/jquery.scrollExtend.min.js"></script>
+	<link rel="stylesheet" href="css/style.css" media="screen">
+	
+	<!-- highslide gallery -->
+	<link rel="stylesheet" type="text/css" href="highslide/highslide.css" />
+    <script type="text/javascript" src="highslide/highslide-with-gallery.js"></script>
+    <script type="text/javascript" src="highslide/highslide-settings.js"></script>
+	<!--[if lt IE 7]>
+    <link rel="stylesheet" type="text/css" href="highslide/highslide-ie6.css" />
+    <![endif]-->
+
+
+	<script type="text/javascript">
+	counter = 3;
+	jQuery(document).ready(
+		function() {
+			jQuery('#sections-wrapper').scrollExtend(
+				{
+					'target': '#sections',			
+					'url': function() { return 'index' + counter + '.html'; }, 
+					'newElementClass': 'section',
+					'onSuccess': function(){
+						counter--;
+					}
+				}
+			);	
+		}
+	);
+
+
+    $(document).ready( function () {
+
+    // mehr Text zuerst verstecken
+        $(".firsthidden").hide();
+
+        // mehr Text einblenden
+        $(".more").click(function () {
+            $(this).parent().children(".more_content").fadeIn(500);
+            $(this).remove();
+            return false;
+        });
+
+    });
+   </script>
+
+</head>
+<body>
+<div id="header">
+    <div class="center">
+    	<div id="logo">
+        	<img src="img/Logo.png" />
+        </div> <!-- Ende logo -->
+        <nav>
+			<ul>
+				<li id="active"><a href="#"><span>Home</span></a></li>
+				<li><a href="#"><span>Kleidung</span></a></li>
+				<li><a href="#"><span>Accessoirs</span></a></li>
+				<li><a href="#"><span>Decken</span></a></li>
+				<li><a href="impressum.html"><span>Impressum</span></a></li>
+				<li><a href="#"><span>Kontakt</span></a></li>
+			</ul>
+		</nav>
+    </div>
+</div> <!-- Ende header -->
+
+
+<div id="sections-wrapper">
+
+<div id="sections">
+    
+    
+    <div class="section">
+        <div class="center">
+            <div class="white-boxy align-left">
+                <h2 class="content-text">Tagesdecke &quot;Alex&quot;</h2>
+                <p class="content-text">
+                    Do you see any Teletubbies in here? Do you see a slender plastic tag clipped to my shirt with my name printed on it? Do you see a little Asian child with a blank expression on his face sitting outside on a mechanical helicopter that shakes when you put quarters in it? No? Well, that's what you see at a toy store. And you must think you're in a toy store, because you're here shopping for an infant named Jeb.
+                
+                    <br />
+                    <a class="more" href="#">mehr&raquo;</a>
+
+                    <span class="firsthidden more_content">
+                        Do you see any Teletubbies in here? Do you see a slender plastic tag clipped to my shirt with my name printed on it? Do you see a little Asian child with a blank expression on his face sitting outside on a mechanical helicopter that shakes when you put quarters in it? No? Well, that's what you see at a toy store. And you must think you're in a toy store, because you're here shopping for an infant named Jeb.
+                    </span>
+
+                </p>
+
+            </div> <!-- Ende white-boxy -->
+
+            <div class="highslide-gallery gallery align-right">
+
+                <a id="thumb1" class='highslide' href='img/decke-alex/1.jpg' title="Two cabins - FIRST GALLERY"
+                        onclick="return hs.expand(this, miniGalleryOptions1)">
+                    <img src='img/decke-alex/1.jpg' width="340" alt=''/></a>
+
+                <div class="hidden-container">
+
+                    <a class='highslide' href='img/decke-alex/2.jpg' title="Patterns in the snow"
+                            onclick="return hs.expand(this, miniGalleryOptions1)">
+                        <img src='img/decke-alex/2.jpg' alt=''/></a>
+
+                    <a class='highslide' href='img/decke-alex/3.jpg' title="Cabins"
+                            onclick="return hs.expand(this, miniGalleryOptions1)">
+                        <img src='img/decke-alex/3.jpg' alt=''/></a>
+
+                    <a class='highslide' href='img/decke-alex/3.jpg' title="Old stone cabins"
+                            onclick="return hs.expand(this, miniGalleryOptions1)">
+                        <img src='img/decke-alex/3.jpg' alt=''/></a>
+                </div>
+            </div><!--Ende highslide-gallery-->
+            
+            <div id="createCollabImg" class="gallery align-right">
+                <div class="main-img-container">
+                	<img id="slider1" class="main-img" alt="" src="img/decke-alex/1.jpg" />
+                </div> <!-- Ende main-img-container -->
+                <div class="thumbstrip">
+                	<div class="inner">
+                		<a href="#" onclick="document.getElementById('slider1').setAttribute('src','img/decke-alex/1.jpg'); return false;" id="slider1-thumb1"><img class="thumb" alt="" src="img/decke-alex/1.jpg" /></a>
+                		<a href="#" onclick="document.getElementById('slider1').setAttribute('src','img/decke-alex/2.jpg'); return false;" id="slider1-thumb2"><img class="thumb" alt="" src="img/decke-alex/2.jpg" /></a>
+                		<a href="#" onclick="document.getElementById('slider1').setAttribute('src','img/decke-alex/3.jpg'); return false;" id="slider1-thumb3"><img class="thumb" alt="" src="img/decke-alex/3.jpg" /></a>
+                	</div>
+                </div> <!-- Ende thumbstrip -->
+            </div>
+
+			<div style="clear:both;"></div>
+
+            
+        </div> <!-- Ende center -->
+    </div> <!-- Ende section -->
+    
+    
+    
+    <div class="section">
+        <div class="center">
+            
+            <div id="" class="gallery align-left">
+                <div class="main-img-container">
+                	<img id="slider2" class="main-img" alt="" src="img/decke-hans/1.jpg" />
+                </div> <!-- Ende main-img-container -->
+                <div class="thumbstrip">
+                	<div class="inner">
+                		<a href="#" onclick="document.getElementById('slider2').setAttribute('src','img/decke-hans/1.jpg'); return false;" id="slider2-thumb1"><img class="thumb" alt="" src="img/decke-hans/1.jpg" /></a>
+                		<a href="#" onclick="document.getElementById('slider2').setAttribute('src','img/decke-hans/2.jpg'); return false;" id="slider2-thumb2"><img class="thumb" alt="" src="img/decke-hans/2.jpg" /></a>
+                		<a href="#" onclick="document.getElementById('slider2').setAttribute('src','img/decke-hans/3.jpg'); return false;" id="slider2-thumb3"><img class="thumb" alt="" src="img/decke-hans/3.jpg" /></a>
+                		<a href="#" onclick="document.getElementById('slider2').setAttribute('src','img/decke-hans/4.jpg'); return false;" id="slider2-thumb4"><img class="thumb" alt="" src="img/decke-hans/4.jpg" /></a>
+                		<a href="#" onclick="document.getElementById('slider2').setAttribute('src','img/decke-hans/5.jpg'); return false;" id="slider2-thumb5"><img class="thumb" alt="" src="img/decke-hans/5.jpg" /></a>
+                	</div>
+                </div> <!-- Ende thumbstrip -->
+            </div>
+			
+            
+            <div class="white-boxy align-right">
+                <h2 class="content-text">Eine Decke f&uuml;r die Couch</h2>
+                <p class="content-text">
+                    Normally, both your asses would be dead as fucking fried chicken, but you happen to pull this shit while I'm in a transitional period so I don't wanna kill you, I wanna help you. But I can't give you this case, it don't belong to me. Besides, I've already been through too much shit this morning over this case to hand it over to your dumb ass.
+
+                    <br />
+                    <a class="more" href="#">mehr&raquo;</a>
+
+                    <span class="firsthidden more_content">
+                        <!--[if lt IE 7]>
+    <link rel="stylesheet" type="text/css" href="highslide/highslide-ie6.css" />
+    <![endif]-->Do you see any Teletubbies in here? Do you see a slender plastic tag clipped to my shirt with my name 
+                        printed on it? Do you see a little Asian child with a blank expression on his face sitting outside on 
+                        a mechanical helicopter that shakes when you put quarters in it? No? Well, that's what you see at a toy store. And you must think you're in a toy store, because you're here shopping for an infant named Jeb.
+                    </span>
+                </p>
+            </div> <!-- Ende white-boxy -->
+            
+            <div class="clear-both"></div>
+            
+        </div> <!-- Ende center -->
+    </div> <!-- Ende section -->
+    
+    
+    <div class="section">
+        <div class="center">
+            
+            <div id="" class="gallery align-right">
+                <div class="main-img-container">
+                	<img id="slider3" class="main-img" alt="" src="img/karten/1.jpg" />
+                </div> <!-- Ende main-img-container -->
+                <div class="thumbstrip">
+                	<div class="inner">
+                		<a href="#" onclick="document.getElementById('slider3').setAttribute('src','img/karten/1.jpg'); return false;" id="slider3-thumb1"><img class="thumb" alt="" src="img/karten/1.jpg" /></a>
+                		<a href="#" onclick="document.getElementById('slider3').setAttribute('src','img/karten/2.jpg'); return false;" id="slider3-thumb2"><img class="thumb" alt="" src="img/karten/2.jpg" /></a>
+                		<a href="#" onclick="document.getElementById('slider3').setAttribute('src','img/karten/3.jpg'); return false;" id="slider3-thumb3"><img class="thumb" alt="" src="img/karten/3.jpg" /></a>
+                		<a href="#" onclick="document.getElementById('slider3').setAttribute('src','img/karten/4.jpg'); return false;" id="slider3-thumb4"><img class="thumb" alt="" src="img/karten/4.jpg" /></a>
+                		<a href="#" onclick="document.getElementById('slider3').setAttribute('src','img/karten/5.jpg'); return false;" id="slider3-thumb5"><img class="thumb" alt="" src="img/karten/5.jpg" /></a>
+                		<a href="#" onclick="document.getElementById('slider3').setAttribute('src','img/karten/6.jpg'); return false;" id="slider3-thumb6"><img class="thumb" alt="" src="img/karten/6.jpg" /></a>
+                		<a href="#" onclick="document.getElementById('slider3').setAttribute('src','img/karten/7.jpg'); return false;" id="slider3-thumb7"><img class="thumb" alt="" src="img/karten/7.jpg" /></a>
+                		<a href="#" onclick="document.getElementById('slider3').setAttribute('src','img/karten/8.jpg'); return false;" id="slider3-thumb8"><img class="thumb" alt="" src="img/karten/8.jpg" /></a>
+                		<a href="#" onclick="document.getElementById('slider3').setAttribute('src','img/karten/9.jpg'); return false;" id="slider3-thumb9"><img class="thumb" alt="" src="img/karten/9.jpg" /></a>
+                		<a href="#" onclick="document.getElementById('slider3').setAttribute('src','img/karten/10.jpg'); return false;" id="slider3-thumb10"><img class="thumb" alt="" src="img/karten/10.jpg" /></a>
+                	</div>
+                </div> <!-- Ende thumbstrip -->
+            </div>
+			
+            
+            <div class="white-boxy align-left">
+                <h2 class="content-text">Karten / Aufsteller f&uuml;r einen besonderen Anlass</h2>
+                <p class="content-text">Now that there is the Tec-9, a crappy spray gun from South Miami. This gun is advertised as the most popular gun in American crime. Do you believe that shit? It actually says that in the little book that comes with it: the most popular gun in American crime. Like they're actually proud of that shit.</p>
+            </div> <!-- Ende white-boxy -->
+            
+            <div class="clear-both"></div>
+            
+        </div> <!-- Ende center -->
+    </div> <!-- Ende section -->
+
+
+    <div class="section">
+        <div class="center">
+            
+            <div class="white-boxy align-right">
+                <h2 class="content-text">Küchenset - Geschenk f&uuml;r die Nachbarn</h2>
+                <p class="content-text">Now that there is the Tec-9, a crappy spray gun from South Miami. This gun is advertised as the most popular gun in American crime. Do you believe that shit? It actually says that in the little book that comes with it: the most popular gun in American crime. Like they're actually proud of that shit.</p>
+            </div> <!-- Ende white-boxy -->
+            
+            <div id="" class="gallery align-left">
+                <div class="main-img-container">
+                	<img id="slider4" class="main-img" alt="" src="img/tisch-nachbarn/1.jpg" />
+                </div> <!-- Ende main-img-container -->
+                <div class="thumbstrip">
+                	<div class="inner">
+                		<a href="#" onclick="document.getElementById('slider4').setAttribute('src','img/tisch-nachbarn/1.jpg'); return false;" id="slider4-thumb1"><img class="thumb" alt="" src="img/tisch-nachbarn/1.jpg" /></a>
+                		<a href="#" onclick="document.getElementById('slider4').setAttribute('src','img/tisch-nachbarn/2.jpg'); return false;" id="slider4-thumb2"><img class="thumb" alt="" src="img/tisch-nachbarn/2.jpg" /></a>
+                		<a href="#" onclick="document.getElementById('slider4').setAttribute('src','img/tisch-nachbarn/3.jpg'); return false;" id="slider4-thumb3"><img class="thumb" alt="" src="img/tisch-nachbarn/3.jpg" /></a>
+                		<a href="#" onclick="document.getElementById('slider4').setAttribute('src','img/tisch-nachbarn/4.jpg'); return false;" id="slider4-thumb4"><img class="thumb" alt="" src="img/tisch-nachbarn/4.jpg" /></a>
+                	</div>
+                </div> <!-- Ende thumbstrip -->
+            </div>
+			
+            <div class="clear-both"></div>
+            
+            
+        </div> <!-- Ende center -->
+    </div> <!-- Ende section -->
+    
+    
+</div> <!-- Ende sections -->
+</div> <!-- Ende section-wrapper -->
+</body>
+</html>
